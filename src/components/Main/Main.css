@@ -1,0 +1,247 @@
+.main{
+    flex:1;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.span1{
+    background: -webkit-linear-gradient(26deg,#df0be3,#1143e7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    padding: 15px;
+    color: #454444;
+}
+
+.main .nav img{
+    width: 40px;
+    border-radius: 50px;
+}
+
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.main .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #b2b4b3;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards1{
+     display: flex;
+     width:100%;
+    justify-content:space-evenly;
+    align-items: center
+   
+}
+
+
+.main .card1{
+    height: 200px;
+    padding: 15px;
+    background-color: #d8d9dc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    margin: 10px;
+}
+
+.main .card1 img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main .card1 p{
+    color: #454444;
+    font-size: 17px;
+}
+.main .card1:hover{
+    background-color: #afafe9;
+   
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    max-width: 900px;
+    padding:0px 20px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    gap:20px;
+    background-color: #e3eaf2;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+.search-box img{
+    width: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.back-button{
+   width: 15px;
+   height: 25px;
+   filter: invert();
+   margin-top: auto;
+}
+
+.search-box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    color: black;
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #eaf2fa;
+    background: linear-gradient(to right, #a7d7f9,#ffffff,#a8d9fc);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+  0%{
+    background-position: -800px 0px;
+  }  
+  100%{
+    background-position: 800px 0px;
+  }  
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@media(max-width:600px){
+    .main-bottom input{
+        flex: none;
+        width: 150px;
+    }
+
+    .main-bottom img{
+        width: 20px;
+    }
+
+    .search-box{
+        padding: 5px 10px;
+    }
+
+    .search-box div{
+        gap: 5px;
+    }
+    .main .card1{
+        height: 175px;
+        padding: 15px;
+        background-color: #d8d9dc;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        width: 30%;
+        margin: 10px;
+    }
+
+    .main .card1 img{
+        width: 25px;
+        padding: 5px;
+        position: absolute;
+        background-color: white;
+        border-radius: 15px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .back-button{
+        width: 5px;
+        height: 19px;
+        filter: invert();
+        margin-top: auto;
+     }
+
+}
+
+
